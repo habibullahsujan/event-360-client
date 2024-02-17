@@ -17,12 +17,12 @@ const routes = createBrowserRouter([
       { path: "/about", element: <About /> },
     ],
   }, {
-    path: 'dashboard',
+    path: '/admin',
     element: <Dashboard />, children: [
       { index: true, element: <Main /> },
-      { path: '/dashboard/events', element: <EventDashboard /> },
-      { path: '/dashboard/recent-event', element: <RecentEventDashboard /> },
-      { path: '/dashboard/service', element: <ServiceDashboard /> }
+      { path: '/admin/events', element: <EventDashboard /> },
+      { path: '/admin/recent-event', element: <RecentEventDashboard /> },
+      { path: '/admin/service', element: <ServiceDashboard /> }
     ]
   }
 ]);
