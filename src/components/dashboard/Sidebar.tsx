@@ -22,13 +22,13 @@ const Sidebar = () => {
         <SheetTrigger className="md:hidden bg-gray-400 flex "><MenuIcon /></SheetTrigger>
         <SheetContent side={"left"} className="flex flex-col">
           <SheetClose asChild>
-            <NavLink to={'/admin/events'}>Events</NavLink>
+            <NavLink to={'/dashboard/events'}>Events</NavLink>
           </SheetClose>
           <SheetClose asChild>
-            <NavLink to={'/admin/recent-event'}>Recent Event</NavLink>
+            <NavLink to={'/dashboard/recent-event'}>Recent Event</NavLink>
           </SheetClose>
           <SheetClose asChild>
-            <NavLink to={'/admin/service'}>Service</NavLink>
+            <NavLink to={'/dashboard/service'}>Service</NavLink>
           </SheetClose>
         </SheetContent>
       </Sheet>
